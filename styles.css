@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cross-green: #2FC3BB;
+    --circle-yellow: #EDB446;
+    --board-child: #1F3540;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+main > div {
+    background-color: var(--board-child)
+}
