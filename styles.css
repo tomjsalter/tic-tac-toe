@@ -43,15 +43,15 @@ body {
     font-family: 'Fredoka One', cursive;
     font-size: 18px;
     letter-spacing: 4px;
-    height: 60px;
+    height: 50px;
     text-transform: uppercase;
-    padding: 8px 20px;
+    padding: 0px 16px;
     cursor: pointer;
     background-color: var(--tertiary);
     border: none;
     border-radius: 10px;
     color: var(--board-child);
-    box-shadow: 0 10px 0px var(--tertiary-dark);
+    box-shadow: 0 6px 0px var(--tertiary-dark);
 }
 
 .game-board {
