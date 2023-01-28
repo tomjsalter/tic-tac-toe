@@ -7,18 +7,26 @@
 :root {
     --cross-green: #2FC3BB;
     --circle-yellow: #EDB446;
+    --board-bg: #192A32;
     --board-child: #1F3540;
+    --board-child-shadow: #102129;
+}
+
+body {
+    background-color: var(--board-bg);
+    padding: 0px 25px;
 }
 
 .gameboard {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
     justify-content: center;
 }
 
-main > div {
-    background-color: var(--board-child)
+.board-item {
+    background-color: var(--board-child);
+    box-shadow: 0 10px 0px var(--board-child-shadow);
+    border-radius: 10px;
 }
