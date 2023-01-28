@@ -5,8 +5,10 @@
 }
 
 :root {
-    --cross-green: #2FC3BB;
-    --circle-yellow: #EDB446;
+    --primary: #2FC3BB;
+    --secondary: #EDB446;
+    --tertiary: #A8BEC9;
+    --tertiary-dark: #6C8997;
     --board-bg: #192A32;
     --board-child: #1F3540;
     --board-child-shadow: #102129;
@@ -14,10 +16,45 @@
 
 body {
     background-color: var(--board-bg);
-    padding: 0px 25px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    width: 350px;
+    margin: auto;
 }
 
-.gameboard {
+.game-action-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 60px 0px;
+    align-items: center;
+}
+
+.game-title {
+    font-size: 48px;
+    color: var(--primary);
+}
+
+.game-title > span {
+    margin-left: 8px;
+    color: var(--secondary);
+}
+
+.game-start-reset-btn {
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    letter-spacing: 4px;
+    height: 60px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: var(--tertiary);
+    border: none;
+    border-radius: 10px;
+    color: var(--board-child);
+    box-shadow: 0 10px 0px var(--tertiary-dark);
+}
+
+.game-board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -25,7 +62,7 @@ body {
     justify-content: center;
 }
 
-.board-item {
+.game-board-item {
     background-color: var(--board-child);
     box-shadow: 0 10px 0px var(--board-child-shadow);
     border-radius: 10px;

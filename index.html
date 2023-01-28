@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/script.js" defer></script>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Tic-Tac-Toe</title>
-</head>
-<body>
-    <header>
-        <h1>XO</h1>
-        <button>Start game</button>
-        <button>&#8634;</button>
+  </head>
+  <body>
+    <header class="game-action-bar">
+      <h1 class="game-title">X<span>O</span></h1>
+      <button class="game-start-reset-btn">Start</button>
     </header>
-    <main class="gameboard">
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
-        <div class="board-item"></div>
+    <main class="game-board">
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
+      <div class="game-board-item"></div>
     </main>
-    <footer>
-        <div>
-            <p>X (YOU)</p>
-            <p>0</p>
-        </div>
-        <div>
-            <p>TIES</p>
-            <p>0</p>
-        </div>
-        <div>
-            <p>O (CPU)</p>
-            <p>0</p>
-        </div>
+    <footer class="game-scoreboard">
+      <div>
+        <p>X (YOU)</p>
+        <p>0</p>
+      </div>
+      <div>
+        <p>TIES</p>
+        <p>0</p>
+      </div>
+      <div>
+        <p>O (CPU)</p>
+        <p>0</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
