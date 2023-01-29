@@ -67,3 +67,29 @@ body {
     box-shadow: 0 10px 0px var(--board-child-shadow);
     border-radius: 10px;
 }
+
+.game-scoreboard {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 100px);
+    gap: 25px;
+    padding-top: 60px;
+}
+
+.game-score {
+    padding: 16px 0px;
+    border-radius: 10px;
+    color: var(--board-bg);
+}
+
+.game-score.user {
+    background-color: var(--primary);
+}
+
+.game-score.ties {
+    background-color: var(--tertiary);
+}
+
+.game-score.cpu {
+    background-color: var(--secondary);
+}
