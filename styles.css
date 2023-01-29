@@ -93,3 +93,12 @@ body {
 .game-score.cpu {
     background-color: var(--secondary);
 }
+
+.game-score-title {
+    letter-spacing: 1px;
+}
+
+.game-score-count {
+    font-size: 32px;
+    margin-top: 8px;
+}
