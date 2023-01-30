@@ -71,6 +71,7 @@ body {
 .game-scoreboard {
     display: grid;
     text-align: center;
+    justify-content: space-between;
     grid-template-columns: repeat(3, 100px);
     gap: 25px;
     padding-top: 60px;
@@ -101,4 +102,16 @@ body {
 .game-score-count {
     font-size: 32px;
     margin-top: 8px;
+}
+
+@media (width >= 768px) {
+    body {
+        width: 520px;
+    }
+
+    .game-board {
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 35px;
+}
 }
