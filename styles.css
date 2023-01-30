@@ -104,7 +104,7 @@ body {
     margin-top: 8px;
 }
 
-@media (width >= 768px) {
+@media screen and (width >= 768px) {
     body {
         width: 520px;
     }
